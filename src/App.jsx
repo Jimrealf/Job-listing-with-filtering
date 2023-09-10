@@ -32,7 +32,8 @@ function App() {
       return (
         job.role === filter ||
         job.level === filter ||
-        job.languages.includes(filter)
+        job.languages.includes(filter) ||
+        job.tools.includes(filter)
       );
     });
   });

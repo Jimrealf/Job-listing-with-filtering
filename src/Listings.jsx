@@ -65,6 +65,15 @@ function List({ data, filters, handleClick }) {
               </button>
             ))}
           </p>
+          {tools.length > 0 ? (
+            <p className="tools">
+              {tools.map((tool, index) => (
+                <button key={index} onClick={() => handleClick(tool)}>
+                  {tool}
+                </button>
+              ))}
+            </p>
+          ) : null}
         </div>
       </div>
     </div>
